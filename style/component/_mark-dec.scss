@@ -1,0 +1,117 @@
+.mark-c{
+    &::before{
+        content: "";
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+        width: 148px;
+        height: 8px;
+        position: absolute;
+        z-index: -1;
+        top: 44%;
+        left: 40%;
+
+    }
+    &::after{
+        content: "";
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+        width: 148px;
+        height: 8px;
+        position: absolute;
+        z-index: -1;
+        top: 76%;
+        left: 38%;
+
+    }
+    @include media-breakpoint-up(md) {   
+        &::before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 41%;
+            left: 60%;
+    
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 65%;
+            left: 59%;
+    
+        }
+    }
+    //index
+    &-index{
+        &::before{
+            content: "";
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+            width: 148px;
+            height: 8px;
+            position: absolute;
+            z-index: -1;
+            top: 40%;
+            left: -2%;
+    
+        }
+        &::after{
+            content: "";
+            background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+            width: 119px;
+            height: 8px;
+            position: absolute;
+            z-index: -1;
+            top: 40%;
+            right: 0%;
+    
+        }
+        @include media-breakpoint-up(md) {   
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 43%;
+                left: 0%;
+        
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 43%;
+                left: 58%;
+        
+            }
+        }
+        @include media-breakpoint-up(lg) {   
+            &::before{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 43%;
+                left: 35%;
+        
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 43%;
+                left: 72%;
+        
+            }
+        }
+    }
+}
+
+.bottom-border-c{
+    position: relative;
+    &::after{
+        content: '';
+        border-bottom: 2px solid $gray-500;
+        width: 24px;
+        position: absolute;
+        top: 90%;
+        right: 50%;
+        translate: 50% 50%;
+    }
+}
+

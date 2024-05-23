@@ -1,3 +1,99 @@
-.banner-img[
-    
-]
+//layout
+.footer-bg {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true);
+    height: 424px;
+    background-size: cover;
+
+    @include media-breakpoint-up(sm) {
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+        background-position: center;
+        height: 273px;
+    }
+}
+
+//index
+.work-bg {
+    &-star {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true");
+        background-position: left top;
+        background-size: cover;
+        height: 390px;
+
+        @include media-breakpoint-up(xl) {
+            height: 800px;
+        }
+    }
+
+    &-fin {
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-sm.png?raw=true");
+        background-position: center center;
+        background-size: cover;
+        height: 390px;
+
+        @include media-breakpoint-up(xl) {
+            background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true");
+            height: 800px;
+        }
+    }
+
+    &-clinic {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true");
+        background-position: center center;
+        background-size: cover;
+        height: 390px;
+
+        @include media-breakpoint-up(xl) {
+            height: 800px;
+        }
+    }
+}
+
+.fin-opacity-bg {
+    &::before {
+        display: none;
+
+        @include media-breakpoint-up(xl) {
+            content: "";
+            position: absolute;
+            width: calc(100%/2);
+            max-height: 800px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6));
+            display: block;
+        }
+
+    }
+}
+
+.work-star{
+    height: 297px;
+    @include media-breakpoint-up(xl) {
+        height: 720px;
+    }
+}
+
+.service-bg {
+    @include media-breakpoint-up(xl) {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true');
+        background-position: center center;
+        background-size: cover;
+        height: 881px;
+    }
+
+    &-item {
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true');
+        background-position: center center;
+        background-size: cover;
+        max-height: 306px;
+        max-width: 306px;
+    }
+    &-content{
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/process-bg.png?raw=true');
+        background-position: center center;
+        background-size: cover;
+        
+    }
+}
+

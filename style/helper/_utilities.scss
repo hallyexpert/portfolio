@@ -133,6 +133,7 @@ $utilities: map-merge(
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border": (
+      responsive: true,
       property: border,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -140,6 +141,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true,
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -147,6 +149,7 @@ $utilities: map-merge(
       )
     ),
     "border-end": (
+      responsive: true,
       property: border-right,
       class: border-end,
       values: (
@@ -155,6 +158,7 @@ $utilities: map-merge(
       )
     ),
     "border-bottom": (
+      responsive: true,
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -162,6 +166,7 @@ $utilities: map-merge(
       )
     ),
     "border-start": (
+      responsive: true,
       property: border-left,
       class: border-start,
       values: (
@@ -805,8 +810,34 @@ $utilities: map-merge(
       property: z-index,
       class: z,
       values: $zindex-levels,
-    )
+    ),
     // scss-docs-end utils-zindex
+    //custom
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: (
+        pointer:pointer,
+      )
+    ),
+    "filter": (
+      property: filter,
+      class: filter,
+      values: (
+        blur:blur(1px),
+        grayscale:grayscale(1),
+        brightness:brightness(103%),
+      )
+    ),
+    "list-style-type": (
+      property: list-style-type,
+      class: list-style,
+      values: (
+        disc:disc,
+      )
+    ),
   ),
+
+
   $utilities
 );

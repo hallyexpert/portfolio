@@ -1,0 +1,45 @@
+.title-dec{
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true');
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        width: 56px;
+        height: 6px;
+        top: 40%;
+        left: 23%;
+        translate: (-50%, -50%);
+
+    }
+    &::after{
+        content:"";
+        background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true');
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        width: 56px;
+        height: 6px;
+        top: 40%;
+        right: 23%;
+        translate: (-50%, -50%);
+
+    }
+    @include media-breakpoint-up(lg) { 
+        &::before{
+            content: "";
+            background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true');
+            width: 100px;
+            top: 40%;
+            left: 35%;
+        }
+        &::after{
+            content: "";
+            background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true');
+            width: 100px;
+            top: 40%;
+            right: 35%;
+        }
+    }
+}

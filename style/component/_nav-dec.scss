@@ -1,0 +1,58 @@
+.border-corner {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid $secondary;
+}
+
+.left-top {
+    top: 0px;
+    left: 40%;
+    border-right: none;
+    border-bottom: none;
+    @include media-breakpoint-up(lg) {
+        transform: translate(-50%,-50%);
+        top: 0%;
+        left: 0%;
+
+    }
+}
+
+.right-top {
+    top: 0px;
+    right: 40%;
+    border-left: none;
+    border-bottom: none;
+    @include media-breakpoint-up(lg) {
+        transform: translate(-50%,-50%);
+        top: 0%;
+        left: 90%;
+
+    }
+}
+
+.left-bottom {
+    bottom: 0px;
+    left: 40%;
+    border-right: none;
+    border-top: none;
+    @include media-breakpoint-up(lg) {
+        transform: translate(-50%,-50%);
+        top: 90%;
+        left: 0%;
+
+    }
+}
+
+.right-bottom {
+    bottom: 0px;
+    right: 40%;
+    border-left: none;
+    border-top: none;
+    @include media-breakpoint-up(lg) {
+        transform: translate(-50%,-50%);
+        top: 90%;
+        left: 90%;
+
+    }
+}

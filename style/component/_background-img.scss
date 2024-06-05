@@ -52,7 +52,7 @@
     &::before {
         display: none;
 
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(lg) {
             content: "";
             position: absolute;
             width: calc(100%/2);
@@ -67,10 +67,20 @@
     }
 }
 
-.work-star{
-    height: 297px;
-    @include media-breakpoint-up(xl) {
-        height: 720px;
+.work{
+    &-star{
+        height: 297px;
+        @include media-breakpoint-up(xl) {
+            height: 720px;
+        }
+    }
+    &-clinic{
+        width: 286px;
+        height: 200px;
+        @include media-breakpoint-up(xl) {
+            height: 490px;
+            width: 699px;
+        }
     }
 }
 
